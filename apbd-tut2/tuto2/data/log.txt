@@ -1,0 +1,25 @@
+Missing data: Zbigniew,Kowalski35,Sztuka Nowych Mediów dzienne,,4450,2000-02-12,35@pjwstk.edu.pl,Alina,Adam
+Missing data: Karolina,Nowak36,Sztuka Nowych Mediów dzienne,,4455,2000-02-12,36@pjwstk.edu.pl,Alina,Adam
+Missing data: Aleksandra,,Sztuka Nowych Mediów dzienne,Dzienne,4434,2000-02-12,42@pjwstk.edu.pl,Alina,Adam
+Missing data: Jolanta,Nowak96,Sztuka Nowych Mediów uzupełniające magisterskie,Dzienne,4756,2000-02-12,96@pjwstk.edu.pl,,
+Already exists: Agnieszka,Brzęczyszczykiewicz382,Informatyka dzienne po angielsku,Dzienne,4603,12/02/2000 00:00:00,382@pjwstk.edu.pl,Alina,Adam
+Missing data: Zbigniew,Kowalski35,Sztuka Nowych Mediów dzienne,,4450,2000-02-12,35@pjwstk.edu.pl,Alina,Adam
+Missing data: Karolina,Nowak36,Sztuka Nowych Mediów dzienne,,4455,2000-02-12,36@pjwstk.edu.pl,Alina,Adam
+Missing data: Aleksandra,,Sztuka Nowych Mediów dzienne,Dzienne,4434,2000-02-12,42@pjwstk.edu.pl,Alina,Adam
+Missing data: Jolanta,Nowak96,Sztuka Nowych Mediów uzupełniające magisterskie,Dzienne,4756,2000-02-12,96@pjwstk.edu.pl,,
+Already exists: Agnieszka,Brzęczyszczykiewicz382,Informatyka dzienne po angielsku,Dzienne,4603,12/02/2000 00:00:00,382@pjwstk.edu.pl,Alina,Adam
+Missing data: Zbigniew,Kowalski35,Sztuka Nowych Mediów dzienne,,4450,2000-02-12,35@pjwstk.edu.pl,Alina,Adam
+Missing data: Karolina,Nowak36,Sztuka Nowych Mediów dzienne,,4455,2000-02-12,36@pjwstk.edu.pl,Alina,Adam
+Missing data: Aleksandra,,Sztuka Nowych Mediów dzienne,Dzienne,4434,2000-02-12,42@pjwstk.edu.pl,Alina,Adam
+Missing data: Jolanta,Nowak96,Sztuka Nowych Mediów uzupełniające magisterskie,Dzienne,4756,2000-02-12,96@pjwstk.edu.pl,,
+Already exists: Agnieszka,Brzęczyszczykiewicz382,Informatyka dzienne po angielsku,Dzienne,4603,12/02/2000 00:00:00,382@pjwstk.edu.pl,Alina,Adam
+Missing data: Zbigniew,Kowalski35,Sztuka Nowych Mediów dzienne,,4450,2000-02-12,35@pjwstk.edu.pl,Alina,Adam
+Missing data: Karolina,Nowak36,Sztuka Nowych Mediów dzienne,,4455,2000-02-12,36@pjwstk.edu.pl,Alina,Adam
+Missing data: Aleksandra,,Sztuka Nowych Mediów dzienne,Dzienne,4434,2000-02-12,42@pjwstk.edu.pl,Alina,Adam
+Missing data: Jolanta,Nowak96,Sztuka Nowych Mediów uzupełniające magisterskie,Dzienne,4756,2000-02-12,96@pjwstk.edu.pl,,
+Already exists: Agnieszka,Brzęczyszczykiewicz382,Informatyka dzienne po angielsku,Dzienne,4603,12/02/2000 00:00:00,382@pjwstk.edu.pl,Alina,Adam
+Missing data: Zbigniew,Kowalski35,Sztuka Nowych Mediów dzienne,,4450,2000-02-12,35@pjwstk.edu.pl,Alina,Adam
+Missing data: Karolina,Nowak36,Sztuka Nowych Mediów dzienne,,4455,2000-02-12,36@pjwstk.edu.pl,Alina,Adam
+Missing data: Aleksandra,,Sztuka Nowych Mediów dzienne,Dzienne,4434,2000-02-12,42@pjwstk.edu.pl,Alina,Adam
+Missing data: Jolanta,Nowak96,Sztuka Nowych Mediów uzupełniające magisterskie,Dzienne,4756,2000-02-12,96@pjwstk.edu.pl,,
+Already exists: Agnieszka,Brzęczyszczykiewicz382,Informatyka dzienne po angielsku,Dzienne,4603,12/02/2000 00:00:00,382@pjwstk.edu.pl,Alina,Adam
