@@ -19,5 +19,7 @@ namespace tuto3.DAL
         public int InsertOrUpdate(Student student);
         public StudentEnrollmentRes EnrollStudent(StudentEnrollmentReq req);
         public StudnetsPromotionRes PromoteStudnets(StudnetsPromotionReq req);
+        public IEnumerable<LogEntry> GetLog();
+        public int InsertLogEntry(LogEntry logEntry);
     }
 }

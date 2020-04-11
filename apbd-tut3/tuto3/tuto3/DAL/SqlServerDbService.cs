@@ -332,9 +332,103 @@ namespace tuto3.DAL
             }
             catch (SqlException e)
             {
-                return new StudnetsPromotionRes { Error = e.Message};
+                return new StudnetsPromotionRes { Error = e.Message };
             }
             return null;
+        }
+
+        public IEnumerable<LogEntry> GetLog()
+        {
+            List<LogEntry> log = new List<LogEntry>();
+
+            using SqlConnection connection = new SqlConnection(ConnectionString);
+            using SqlCommand command = new SqlCommand
+            {
+                Connection = connection,
+                CommandText = "select IdLogEntry, EntryTime, MethodName, PathString, QueryString, BodyString " +
+                                    "from LogEntry l " +
+                                    "join HttpMethod m " +
+                                    "on l.IdMethod = m.IdMethod"
+
+            };
+
+            connection.Open();
+            SqlDataReader dataReader = command.ExecuteReader();
+            while (dataReader.Read())
+            {
+                LogEntry logEntry = new LogEntry
+                {
+                    Id = int.Parse(dataReader["IdLogEntry"].ToString()),
+                    Time = DateTime.Parse(dataReader["EntryTime"].ToString()),
+                    Method = dataReader["MethodName"].ToString(),
+                    Path = dataReader["PathString"].ToString(),
+                    QueryString = dataReader["QueryString"].ToString(),
+                    Body = dataReader["BodyString"].ToString(),
+                };
+                log.Add(logEntry);
+            }
+
+            return log;
+        }
+
+        public int InsertLogEntry(LogEntry logEntry)
+        {
+            using SqlConnection connection = new SqlConnection(ConnectionString);
+            using SqlCommand command = new SqlCommand
+            {
+                Connection = connection,
+                CommandText = "select isnull(max(IdLogEntry), 1) as MaxID from LogEntry"
+            };
+            connection.Open();
+            SqlDataReader dataReader = command.ExecuteReader();
+            int nextIdLogEntry = 1;
+            if (dataReader.Read())
+            {
+                nextIdLogEntry = int.Parse(dataReader["MaxID"].ToString()) + 1;
+            }
+            dataReader.Close();
+
+            command.CommandText = "select IdMethod from HttpMethod where MethodName=@MethodName";
+            command.Parameters.AddWithValue("MethodName", logEntry.Method);
+
+            dataReader = command.ExecuteReader();
+            int idMethod = 1;
+            if (dataReader.Read())
+            {
+                idMethod = int.Parse(dataReader["IdMethod"].ToString());
+                dataReader.Close();
+            }
+            else
+            {
+                dataReader.Close();
+                command.CommandText = "select isnull(max(IdMethod), 1) as MaxId from HttpMethod";
+                dataReader = command.ExecuteReader();
+                if (dataReader.Read())
+                {
+                    idMethod = int.Parse(dataReader["MaxID"].ToString()) + 1;
+                }
+                dataReader.Close();
+
+                command.CommandText = "insert into HttpMethod(IdMethod, MethodName) " +
+                                        "values(@IdMethodNext, @MethodName)";
+                command.Parameters.AddWithValue("IdMethodNext", idMethod);
+                command.ExecuteNonQuery();
+            }
+
+
+            command.CommandText = "insert into LogEntry(IdLogEntry, EntryTime, IdMethod, PathString, QueryString, BodyString) " +
+                                    "values(@NextIdLogEntry, @EntryTime, @IdMethod, @PathString, @QueryString, @BodyString)";
+
+            command.Parameters.AddWithValue("NextIdLogEntry", nextIdLogEntry);
+            command.Parameters.AddWithValue("EntryTime", logEntry.Time);
+            command.Parameters.AddWithValue("IdMethod", idMethod);
+            command.Parameters.AddWithValue("PathString", logEntry.Path);
+            command.Parameters.AddWithValue("QueryString", logEntry.QueryString);
+            command.Parameters.AddWithValue("BodyString", logEntry.Body);
+
+            command.ExecuteNonQuery();
+
+            return nextIdLogEntry;
         }
     }
 }
