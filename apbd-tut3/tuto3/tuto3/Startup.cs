@@ -54,30 +54,35 @@ namespace tuto3
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Studnet API v1");
             });
 
+
+            app.UseMiddleware<CustomExceptionHandlerMiddleware>();
+
             app.UseMiddleware<LoggerMiddleware>();
 
-            // Check if a request is sent by a Student
+            // Check if a request is sent by a Student, on condition that path contains word "secret"
             // (better create a custom middleware class for this)
-            app.Use(async (context, next) =>
-            {
-                if (!context.Request.Headers.ContainsKey("Index"))
+            app.UseWhen(context => context.Request.Path.ToString().Contains("secret"), app =>
+                app.Use(async (context, next) =>
                 {
-                    context.Response.StatusCode = StatusCodes.Status401Unauthorized;
-                    await context.Response.WriteAsync("Index number required");
-                    return;
-                }
+                    if (!context.Request.Headers.ContainsKey("Index"))
+                    {
+                        context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+                        await context.Response.WriteAsync("Index number required");
+                        return;
+                    }
 
-                string index = context.Request.Headers["Index"].ToString();
+                    string index = context.Request.Headers["Index"].ToString();
 
-                var student = service.GetStudent(index);
-                if (student == null)
-                {
-                    context.Response.StatusCode = StatusCodes.Status400BadRequest;
-                    await context.Response.WriteAsync("Incorrect Index number");
-                    return;
-                }
-                await next();
-            });
+                    var student = service.GetStudent(index);
+                    if (student == null)
+                    {
+                        context.Response.StatusCode = StatusCodes.Status400BadRequest;
+                        await context.Response.WriteAsync("Incorrect Index number");
+                        return;
+                    }
+                    await next();
+                })
+            );
 
             app.UseRouting();
 
