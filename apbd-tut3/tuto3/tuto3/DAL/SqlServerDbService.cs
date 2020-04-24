@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Threading.Tasks;
 using tuto3.DTOs.Requests;
 using tuto3.DTOs.Responses;
@@ -430,5 +431,101 @@ namespace tuto3.DAL
 
             return nextIdLogEntry;
         }
+
+        public StudentCredentialsRes GetCredentials(string indexNumber)
+        {
+            using SqlConnection connection = new SqlConnection(ConnectionString);
+            using SqlCommand command = new SqlCommand
+            {
+                Connection = connection,
+                CommandText = "select Password, Salt, RoleName " +
+                                    "from Student s " +
+                                    "join StudentRole sr " +
+                                    "on s.IdRole = sr.IdRole " +
+                                    "where s.indexNumber = @indexNumber"
+            };
+            command.Parameters.AddWithValue("indexNumber", indexNumber);
+
+            connection.Open();
+            SqlDataReader dataReader = command.ExecuteReader();
+            if (dataReader.Read())
+            {
+                StudentCredentialsRes res = new StudentCredentialsRes
+                {
+                    Password = dataReader["password"].ToString(),
+                    Salt = dataReader["salt"].ToString(),
+                    Role = dataReader["roleName"].ToString()
+                };
+                return res;
+            }
+
+            return null;
+        }
+
+        public StudentByRefreshTokenRes StudentByRefreshToken(string refreshToken)
+        {
+            using SqlConnection connection = new SqlConnection(ConnectionString);
+            using SqlCommand command = new SqlCommand
+            {
+                Connection = connection,
+                CommandText = "select s.indexNumber, sr.RoleName " +
+                                    "from Student s " +
+                                    "join StudentRole sr " +
+                                    "on s.IdRole = sr.IdRole " +
+                                    "where s.refreshToken = @refreshToken"
+            };
+            command.Parameters.AddWithValue("refreshToken", refreshToken);
+
+            connection.Open();
+            SqlDataReader dataReader = command.ExecuteReader();
+            if (dataReader.Read())
+            {
+                return new StudentByRefreshTokenRes
+                {
+                    IndexNumber = dataReader["indexNumber"].ToString(),
+                    Role = dataReader["RoleName"].ToString()
+                };
+            }
+            return null;
+        }
+
+        public int SetRefreshTocken(SetRefreshTokenReq req)
+        {
+            using SqlConnection connection = new SqlConnection(ConnectionString);
+            using SqlCommand command = new SqlCommand
+            {
+                Connection = connection,
+                CommandText = "update student " +
+                                    "set refreshToken = @RefreshToken " +
+                                    "where indexNumber = @IndexNumber"
+            };
+            command.Parameters.AddWithValue("refreshToken", req.RefreshToken);
+            command.Parameters.AddWithValue("indexNumber", req.IndexNumber);
+
+            connection.Open();
+            return command.ExecuteNonQuery();
+
+        }
+
+        public int UpgradeStudentPassword(UpgradeStudentPasswordReq req)
+        {
+            using SqlConnection connection = new SqlConnection(ConnectionString);
+            using SqlCommand command = new SqlCommand
+            {
+                Connection = connection,
+                CommandText = "update student " +
+                                    "set password = @Password, salt = @Salt " +
+                                    "where indexNumber = @IndexNumber"
+            };
+
+            command.Parameters.AddWithValue("indexNumber", req.IndexNumber);
+            command.Parameters.AddWithValue("password", req.Password);
+            command.Parameters.AddWithValue("salt", req.Salt);
+
+            connection.Open();
+
+            return command.ExecuteNonQuery();
+        }
+
     }
 }

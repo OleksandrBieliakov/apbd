@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using tuto3.DAL;
 using tuto3.DTOs.Requests;
@@ -21,6 +22,7 @@ namespace tuto3.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "employee")]
         public IActionResult EnrollStudent(StudentEnrollmentReq request)
         {
             var response = _dbService.EnrollStudent(request);
@@ -43,6 +45,7 @@ namespace tuto3.Controllers
         }
 
         [HttpPost("promotions")]
+        [Authorize(Roles = "employee")]
         public IActionResult PromoteStudents(StudnetsPromotionReq request)
         {
             var response = _dbService.PromoteStudnets(request);

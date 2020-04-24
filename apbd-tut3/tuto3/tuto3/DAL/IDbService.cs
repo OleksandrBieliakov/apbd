@@ -21,5 +21,10 @@ namespace tuto3.DAL
         public StudnetsPromotionRes PromoteStudnets(StudnetsPromotionReq req);
         public IEnumerable<LogEntry> GetLog();
         public int InsertLogEntry(LogEntry logEntry);
+        public StudentCredentialsRes GetCredentials(string indexNumber);
+        public StudentByRefreshTokenRes StudentByRefreshToken(string refreshToken);
+        public int SetRefreshTocken(SetRefreshTokenReq req);
+        public int UpgradeStudentPassword(UpgradeStudentPasswordReq req);
+
     }
 }

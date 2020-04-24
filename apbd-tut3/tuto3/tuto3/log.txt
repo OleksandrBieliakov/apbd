@@ -2,3 +2,120 @@
 {"Id":26,"Time":"2020-04-12T12:42:07.1045584+02:00","Path":"/api/students","Method":"POST","QueryString":"","Body":"{\n\t\u0022indexNumber\u0022: \u0022s5\u0022,\n        \u0022firstName\u0022: \u0022Jogn\u0022,\n        \u0022lastName\u0022: \u0022Doe\u0022,\n        \u0022birthDate\u0022: \u00221993-04-05T00:00:00\u0022,\n        \u0022studies\u0022: \u0022Computer Science\u0022,\n        \u0022semester\u0022: 1\n}"}
 {"Id":27,"Time":"2020-04-12T12:54:22.9299021+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
 {"Id":28,"Time":"2020-04-12T12:54:38.451582+02:00","Path":"/api/students","Method":"POST","QueryString":"","Body":"{\n\t\u0022indexNumber\u0022: \u0022s5\u0022,\n        \u0022firstName\u0022: \u0022Jogn\u0022,\n        \u0022lastName\u0022: \u0022Doe\u0022,\n        \u0022birthDate\u0022: \u00221993-04-05T00:00:00\u0022,\n        \u0022studies\u0022: \u0022Computer Science\u0022,\n        \u0022semester\u0022: 1\n}"}
+{"Id":29,"Time":"2020-04-23T15:01:48.9380216+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":30,"Time":"2020-04-23T15:01:50.8378713+02:00","Path":"/favicon.ico","Method":"GET","QueryString":"","Body":""}
+{"Id":31,"Time":"2020-04-23T15:02:07.9398662+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":"{\r\n\u0022IndexNumber\u0022: \u0022s912\u0022,\r\n\u0022FirstName\u0022: \u0022Jogn\u0022,\r\n\u0022LastName\u0022: \u0022Doe\u0022,\r\n\u0022BirthDate\u0022: \u00221993-04-05T00:00:00\u0022,\r\n\u0022Studies\u0022: \u0022Computer Science\u0022\r\n}"}
+{"Id":32,"Time":"2020-04-23T15:05:02.7913329+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":33,"Time":"2020-04-23T15:05:08.2146491+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":34,"Time":"2020-04-23T15:07:22.4551738+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":35,"Time":"2020-04-23T15:07:29.9986752+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":36,"Time":"2020-04-23T15:08:46.7336179+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":37,"Time":"2020-04-23T15:08:54.5049084+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":38,"Time":"2020-04-23T15:10:18.326951+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":39,"Time":"2020-04-23T15:10:25.2795004+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":40,"Time":"2020-04-23T15:10:41.639186+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":41,"Time":"2020-04-23T15:10:51.8947764+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":42,"Time":"2020-04-23T15:10:57.7970758+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":43,"Time":"2020-04-23T16:33:31.6246857+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":44,"Time":"2020-04-23T16:33:42.4972801+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":45,"Time":"2020-04-23T16:33:52.8679221+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":46,"Time":"2020-04-23T16:34:01.3889502+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":47,"Time":"2020-04-23T16:37:14.2893042+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":48,"Time":"2020-04-23T16:37:24.0374306+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":49,"Time":"2020-04-23T18:27:05.6083373+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":50,"Time":"2020-04-23T18:32:23.3652072+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":51,"Time":"2020-04-23T18:32:47.0810915+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":52,"Time":"2020-04-23T18:35:34.9457469+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022login1\u0022,\n\t\u0022password\u0022: \u0022password1\u0022\n}\n"}
+{"Id":53,"Time":"2020-04-23T18:36:42.5173478+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":54,"Time":"2020-04-23T18:36:52.1767523+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022login1\u0022,\n\t\u0022password\u0022: \u0022password1\u0022\n}\n"}
+{"Id":55,"Time":"2020-04-23T18:38:37.2936843+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":56,"Time":"2020-04-23T18:38:46.4127934+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":57,"Time":"2020-04-23T18:41:33.7041144+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":58,"Time":"2020-04-23T18:41:45.051089+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022login1\u0022,\n\t\u0022password\u0022: \u0022password1\u0022\n}\n"}
+{"Id":59,"Time":"2020-04-23T18:41:47.1876146+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022login1\u0022,\n\t\u0022password\u0022: \u0022password1\u0022\n}\n"}
+{"Id":60,"Time":"2020-04-23T18:41:48.6677126+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022login1\u0022,\n\t\u0022password\u0022: \u0022password1\u0022\n}\n"}
+{"Id":61,"Time":"2020-04-23T18:41:50.260393+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022login1\u0022,\n\t\u0022password\u0022: \u0022password1\u0022\n}\n"}
+{"Id":62,"Time":"2020-04-23T18:42:15.7772419+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":63,"Time":"2020-04-23T18:43:11.4036314+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":64,"Time":"2020-04-23T18:43:27.9849547+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022login1\u0022,\n\t\u0022password\u0022: \u0022password1\u0022\n}\n"}
+{"Id":65,"Time":"2020-04-23T18:43:48.104567+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":66,"Time":"2020-04-23T18:43:55.8202376+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":67,"Time":"2020-04-23T18:44:46.1481687+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":68,"Time":"2020-04-23T18:44:56.5480816+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":69,"Time":"2020-04-23T18:45:13.0330577+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022login1\u0022,\n\t\u0022password\u0022: \u0022password1\u0022\n}\n"}
+{"Id":70,"Time":"2020-04-23T18:45:33.6735645+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":71,"Time":"2020-04-23T18:45:54.5063216+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":72,"Time":"2020-04-23T18:46:02.3422787+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022login1\u0022,\n\t\u0022password\u0022: \u0022password1\u0022\n}\n"}
+{"Id":73,"Time":"2020-04-23T18:46:18.5851418+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":74,"Time":"2020-04-23T18:47:30.0733493+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":75,"Time":"2020-04-23T18:47:45.2103263+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":76,"Time":"2020-04-23T18:47:56.1856827+02:00","Path":"/api/students/s1","Method":"GET","QueryString":"","Body":""}
+{"Id":77,"Time":"2020-04-23T18:48:02.0014028+02:00","Path":"/api/students/s1","Method":"GET","QueryString":"","Body":""}
+{"Id":78,"Time":"2020-04-23T18:48:13.3903469+02:00","Path":"/api/students/s1","Method":"GET","QueryString":"","Body":""}
+{"Id":79,"Time":"2020-04-23T18:54:33.0445573+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":80,"Time":"2020-04-23T18:54:39.5934682+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022login1\u0022,\n\t\u0022password\u0022: \u0022password1\u0022\n}\n"}
+{"Id":81,"Time":"2020-04-23T18:54:41.6168265+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022login1\u0022,\n\t\u0022password\u0022: \u0022password1\u0022\n}\n"}
+{"Id":82,"Time":"2020-04-23T18:54:42.861103+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022login1\u0022,\n\t\u0022password\u0022: \u0022password1\u0022\n}\n"}
+{"Id":83,"Time":"2020-04-23T18:54:44.30093+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022login1\u0022,\n\t\u0022password\u0022: \u0022password1\u0022\n}\n"}
+{"Id":84,"Time":"2020-04-23T18:54:45.702046+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022login1\u0022,\n\t\u0022password\u0022: \u0022password1\u0022\n}\n"}
+{"Id":85,"Time":"2020-04-23T18:54:47.8317057+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022login1\u0022,\n\t\u0022password\u0022: \u0022password1\u0022\n}\n"}
+{"Id":86,"Time":"2020-04-23T19:03:04.9201873+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":87,"Time":"2020-04-23T19:03:11.8496602+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022login1\u0022,\n\t\u0022password\u0022: \u0022password1\u0022\n}\n"}
+{"Id":88,"Time":"2020-04-23T19:03:25.0204033+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":89,"Time":"2020-04-24T13:35:32.4768229+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":90,"Time":"2020-04-24T13:36:43.4990469+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022s18884\u0022,\n\t\u0022password\u0022: \u0022pass1\u0022\n}\n"}
+{"Id":91,"Time":"2020-04-24T13:37:22.1267477+02:00","Path":"/api/students/s18886","Method":"GET","QueryString":"","Body":""}
+{"Id":92,"Time":"2020-04-24T13:37:33.1724825+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":93,"Time":"2020-04-24T13:38:07.8702023+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022s18885\u0022,\n\t\u0022password\u0022: \u0022pass2\u0022\n}\n"}
+{"Id":94,"Time":"2020-04-24T13:38:19.818632+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":95,"Time":"2020-04-24T13:39:24.30565+02:00","Path":"/api/enrollments/promotions","Method":"POST","QueryString":"","Body":"{\n\t\u0022Studies\u0022: \u0022Art\u0022,\n\t\u0022Semester\u0022: 2\n}"}
+{"Id":96,"Time":"2020-04-24T13:40:00.5516589+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022s18884\u0022,\n\t\u0022password\u0022: \u0022pass1\u0022\n}\n"}
+{"Id":97,"Time":"2020-04-24T13:40:32.3952646+02:00","Path":"/api/enrollments/promotions","Method":"POST","QueryString":"","Body":"{\n\t\u0022Studies\u0022: \u0022Art\u0022,\n\t\u0022Semester\u0022: 2\n}"}
+{"Id":98,"Time":"2020-04-24T13:40:41.2366112+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":99,"Time":"2020-04-24T17:43:19.3018159+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":100,"Time":"2020-04-24T17:43:41.6487187+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022s18884\u0022,\n\t\u0022password\u0022: \u0022pass1\u0022\n}\n"}
+{"Id":101,"Time":"2020-04-24T17:43:44.8343277+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022s18884\u0022,\n\t\u0022password\u0022: \u0022pass1\u0022\n}\n"}
+{"Id":102,"Time":"2020-04-24T17:43:46.5060197+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022s18884\u0022,\n\t\u0022password\u0022: \u0022pass1\u0022\n}\n"}
+{"Id":103,"Time":"2020-04-24T17:43:48.0553671+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022s18884\u0022,\n\t\u0022password\u0022: \u0022pass1\u0022\n}\n"}
+{"Id":104,"Time":"2020-04-24T17:43:49.6454725+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022s18884\u0022,\n\t\u0022password\u0022: \u0022pass1\u0022\n}\n"}
+{"Id":105,"Time":"2020-04-24T17:46:33.8221708+02:00","Path":"/api/students/refresh-token/93cf2794-7ca1-437d-a140-2a53e3c70e3c","Method":"POST","QueryString":"","Body":""}
+{"Id":106,"Time":"2020-04-24T17:49:53.5037176+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":107,"Time":"2020-04-24T17:50:12.6278954+02:00","Path":"/api/students/refresh-token/93cf2794-7ca1-437d-a140-2a53e3c70e3c","Method":"POST","QueryString":"","Body":""}
+{"Id":108,"Time":"2020-04-24T17:52:50.3312493+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":109,"Time":"2020-04-24T17:52:58.0272438+02:00","Path":"/api/students/refresh-token/93cf2794-7ca1-437d-a140-2a53e3c70e3c","Method":"POST","QueryString":"","Body":""}
+{"Id":110,"Time":"2020-04-24T17:53:09.1198394+02:00","Path":"/api/students/refresh-token/93cf2794-7ca1-437d-a140-2a53e3c70e3c","Method":"POST","QueryString":"","Body":""}
+{"Id":111,"Time":"2020-04-24T17:53:21.8147115+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022s18884\u0022,\n\t\u0022password\u0022: \u0022pass1\u0022\n}\n"}
+{"Id":112,"Time":"2020-04-24T17:53:36.3782008+02:00","Path":"/api/students/refresh-token/8bdc41b2-6470-45f4-b85f-3814fc75e498","Method":"POST","QueryString":"","Body":""}
+{"Id":113,"Time":"2020-04-24T17:53:49.5324301+02:00","Path":"/api/students/refresh-token/5db7b540-e90e-4ca5-a112-e80c2fcfb58d","Method":"POST","QueryString":"","Body":""}
+{"Id":114,"Time":"2020-04-24T17:54:03.6603941+02:00","Path":"/api/students/refresh-token/eacd1955-602a-4442-a81f-98cc698a4806","Method":"POST","QueryString":"","Body":""}
+{"Id":115,"Time":"2020-04-24T17:58:47.3539753+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":116,"Time":"2020-04-24T17:59:02.3347222+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022s18884\u0022,\n\t\u0022password\u0022: \u0022pass1\u0022\n}\n"}
+{"Id":117,"Time":"2020-04-24T17:59:47.5457871+02:00","Path":"/api/students/refresh-token/eacd1955-602a-4442-a81f-98cc698a4806","Method":"POST","QueryString":"","Body":"{\n\t\u0022regreshToken\u0022: \u0022f4b7855d-e406-4d64-8afa-bf3190d32a77\u0022\n}"}
+{"Id":118,"Time":"2020-04-24T17:59:59.4225362+02:00","Path":"/api/students/refresh-token/eacd1955-602a-4442-a81f-98cc698a4806","Method":"POST","QueryString":"","Body":"{\n\t\u0022refreshToken\u0022: \u0022f4b7855d-e406-4d64-8afa-bf3190d32a77\u0022\n}"}
+{"Id":119,"Time":"2020-04-24T18:00:45.1486452+02:00","Path":"/api/students/refresh-token/eacd1955-602a-4442-a81f-98cc698a4806","Method":"POST","QueryString":"","Body":"{\n\t\u0022refreshToken\u0022: \u0022f4b7855d-e406-4d64-8afa-bf3190d32a77\u0022\n}"}
+{"Id":120,"Time":"2020-04-24T18:01:00.3695846+02:00","Path":"/api/students/refresh-token","Method":"POST","QueryString":"","Body":"{\n\t\u0022refreshToken\u0022: \u0022f4b7855d-e406-4d64-8afa-bf3190d32a77\u0022\n}"}
+{"Id":121,"Time":"2020-04-24T18:01:17.1403394+02:00","Path":"/api/students/refresh-token","Method":"POST","QueryString":"","Body":"{\n\t\u0022refreshToken\u0022: \u002219bdf8c7-0b68-412a-817c-ad21cbd749cf\u0022\n}"}
+{"Id":122,"Time":"2020-04-24T19:15:55.0904663+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":123,"Time":"2020-04-24T19:16:08.0642679+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022s18884\u0022,\n\t\u0022password\u0022: \u0022pass1\u0022\n}\n"}
+{"Id":124,"Time":"2020-04-24T19:18:24.6287471+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":125,"Time":"2020-04-24T19:18:38.0982555+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022s18884\u0022,\n\t\u0022password\u0022: \u0022pass1\u0022\n}\n"}
+{"Id":126,"Time":"2020-04-24T19:22:03.0544285+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":127,"Time":"2020-04-24T19:22:20.4305565+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022s18884\u0022,\n\t\u0022password\u0022: \u0022pass1\u0022\n}\n"}
+{"Id":128,"Time":"2020-04-24T19:23:42.0036627+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":129,"Time":"2020-04-24T19:31:02.4074709+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":130,"Time":"2020-04-24T19:31:09.7803009+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022s18884\u0022,\n\t\u0022password\u0022: \u0022pass1\u0022\n}\n"}
+{"Id":131,"Time":"2020-04-24T19:31:47.8858323+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":132,"Time":"2020-04-24T19:31:52.8125451+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022s18884\u0022,\n\t\u0022password\u0022: \u0022pass1\u0022\n}\n"}
+{"Id":133,"Time":"2020-04-24T19:32:42.4843925+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":134,"Time":"2020-04-24T19:32:44.4908375+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022s18884\u0022,\n\t\u0022password\u0022: \u0022pass1\u0022\n}\n"}
+{"Id":135,"Time":"2020-04-24T19:32:49.8913631+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022s18884\u0022,\n\t\u0022password\u0022: \u0022pass1\u0022\n}\n"}
+{"Id":136,"Time":"2020-04-24T19:35:59.4186539+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":137,"Time":"2020-04-24T19:36:09.6474767+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022s18884\u0022,\n\t\u0022password\u0022: \u0022pass1\u0022\n}\n"}
+{"Id":138,"Time":"2020-04-24T19:36:38.1034587+02:00","Path":"/api/students/refresh-token","Method":"POST","QueryString":"","Body":"{\n\t\u0022refreshToken\u0022: \u0022ea440f3c-d20f-471f-adc3-7f73d69cd9ee\u0022\n}"}
+{"Id":139,"Time":"2020-04-24T20:03:04.525329+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":140,"Time":"2020-04-24T20:03:18.2846651+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022s18884\u0022,\n\t\u0022password\u0022: \u0022pass1\u0022\n}\n"}
+{"Id":141,"Time":"2020-04-24T20:04:58.4908187+02:00","Path":"/api/students/upgrade-password/sdfsdfsd","Method":"POST","QueryString":"","Body":""}
+{"Id":142,"Time":"2020-04-24T20:05:29.2638735+02:00","Path":"/api/students/upgrade-password/s18884","Method":"POST","QueryString":"","Body":""}
+{"Id":143,"Time":"2020-04-24T20:05:38.6644972+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022s18884\u0022,\n\t\u0022password\u0022: \u0022pass1\u0022\n}\n"}
+{"Id":144,"Time":"2020-04-24T20:05:48.0860658+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022s18884\u0022,\n\t\u0022password\u0022: \u0022pass1 dsfsdf\u0022\n}\n"}
+{"Id":145,"Time":"2020-04-24T20:06:15.8908507+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022s18884\u0022,\n\t\u0022password\u0022: \u0022pass1\u0022\n}\n"}
