@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -16,6 +17,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using tuto3.DAL;
+using tuto3.Entities;
 using tuto3.Handlers;
 using tuto3.Middlewares;
 
@@ -33,6 +35,7 @@ namespace tuto3
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<StudentContext>(ops => ops.UseSqlServer(Configuration["ConnectionStrings:DefaultConnectionString"]));
             services.AddScoped<IDbService, SqlServerDbService>();
             services.AddControllers().AddXmlSerializerFormatters();
 

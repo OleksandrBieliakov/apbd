@@ -119,3 +119,32 @@
 {"Id":143,"Time":"2020-04-24T20:05:38.6644972+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022s18884\u0022,\n\t\u0022password\u0022: \u0022pass1\u0022\n}\n"}
 {"Id":144,"Time":"2020-04-24T20:05:48.0860658+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022s18884\u0022,\n\t\u0022password\u0022: \u0022pass1 dsfsdf\u0022\n}\n"}
 {"Id":145,"Time":"2020-04-24T20:06:15.8908507+02:00","Path":"/api/students/login","Method":"POST","QueryString":"","Body":"{\n\t\u0022login\u0022: \u0022s18884\u0022,\n\t\u0022password\u0022: \u0022pass1\u0022\n}\n"}
+{"Id":146,"Time":"2020-05-18T23:09:12.2847581+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":147,"Time":"2020-05-18T23:09:18.3482583+02:00","Path":"/favicon.ico","Method":"GET","QueryString":"","Body":""}
+{"Id":148,"Time":"2020-05-18T23:34:37.6968756+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":149,"Time":"2020-05-19T00:59:51.7863008+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":150,"Time":"2020-05-19T01:01:08.7131359+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":151,"Time":"2020-05-19T01:02:17.8119975+02:00","Path":"/api/students","Method":"POST","QueryString":"","Body":"{\n\t\u0022indexNumber\u0022: \u0022s5555\u0022,\n        \u0022firstName\u0022: \u0022INSERTED_1\u0022,\n        \u0022lastName\u0022: \u0022Doe\u0022,\n        \u0022birthDate\u0022: \u00221993-04-05T00:00:00\u0022,\n        \u0022studies\u0022: \u00221\u0022,\n}"}
+{"Id":152,"Time":"2020-05-19T01:02:30.5079506+02:00","Path":"/api/students","Method":"POST","QueryString":"","Body":"{\n\t\u0022indexNumber\u0022: \u0022s5555\u0022,\n        \u0022firstName\u0022: \u0022INSERTED_1\u0022,\n        \u0022lastName\u0022: \u0022Doe\u0022,\n        \u0022birthDate\u0022: \u00221993-04-05T00:00:00\u0022,\n        \u0022studies\u0022: \u00221\u0022\n}"}
+{"Id":153,"Time":"2020-05-19T01:11:08.8617353+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":154,"Time":"2020-05-19T01:11:17.9633202+02:00","Path":"/api/students","Method":"POST","QueryString":"","Body":"{\n\t\u0022indexNumber\u0022: \u0022s5555\u0022,\n        \u0022firstName\u0022: \u0022INSERTED_1\u0022,\n        \u0022lastName\u0022: \u0022Doe\u0022,\n        \u0022birthDate\u0022: \u00221993-04-05T00:00:00\u0022,\n        \u0022idEnrollment\u0022: \u00221\u0022\n}"}
+{"Id":155,"Time":"2020-05-19T01:11:33.6290597+02:00","Path":"/api/students","Method":"POST","QueryString":"","Body":"{\n\t\u0022indexNumber\u0022: \u0022s5555\u0022,\n        \u0022firstName\u0022: \u0022INSERTED_1\u0022,\n        \u0022lastName\u0022: \u0022Doe\u0022,\n        \u0022birthDate\u0022: \u00221993-04-05T00:00:00\u0022,\n        \u0022idEnrollment\u0022: 1\n}"}
+{"Id":156,"Time":"2020-05-19T01:11:40.4138911+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":157,"Time":"2020-05-19T01:36:09.4898722+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":158,"Time":"2020-05-19T01:36:27.0970834+02:00","Path":"/api/students/s5555","Method":"DELETE","QueryString":"","Body":""}
+{"Id":159,"Time":"2020-05-19T01:36:33.3693241+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":160,"Time":"2020-05-19T01:36:44.8739324+02:00","Path":"/api/students","Method":"POST","QueryString":"","Body":"{\n\t\u0022indexNumber\u0022: \u0022s5555\u0022,\n        \u0022firstName\u0022: \u0022INSERTED_1\u0022,\n        \u0022lastName\u0022: \u0022Doe\u0022,\n        \u0022birthDate\u0022: \u00221993-04-05T00:00:00\u0022,\n        \u0022idEnrollment\u0022: 1\n}"}
+{"Id":161,"Time":"2020-05-19T01:36:55.3181881+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":162,"Time":"2020-05-19T01:49:00.7732682+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":163,"Time":"2020-05-19T01:50:10.7421662+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":164,"Time":"2020-05-19T01:51:59.7578099+02:00","Path":"/api/students/update","Method":"POST","QueryString":"","Body":"{\n\t\u0022IndexNumber\u0022: \u0022s5555\u0022,\n\t\u0022FirstName\u0022: \u0022UPDATED\u0022,\n\t\u0022LastName\u0022: \u0022YES\u0022\n}"}
+{"Id":165,"Time":"2020-05-19T01:52:06.4964555+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":166,"Time":"2020-05-19T01:52:22.9094774+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":167,"Time":"2020-05-19T01:53:23.4983237+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":168,"Time":"2020-05-19T01:53:37.0564317+02:00","Path":"/api/students/update","Method":"POST","QueryString":"","Body":"{\n\t\u0022IndexNumber\u0022: \u0022s5555\u0022,\n\t\u0022FirstName\u0022: \u0022UPDATED\u0022,\n\t\u0022LastName\u0022: \u0022YES\u0022\n}"}
+{"Id":169,"Time":"2020-05-19T02:02:02.4933861+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":170,"Time":"2020-05-19T02:02:17.8650529+02:00","Path":"/api/students/update","Method":"POST","QueryString":"","Body":"{\n\t\u0022IndexNumber\u0022: \u0022s5555\u0022,\n\t\u0022FirstName\u0022: \u0022UPDATED\u0022,\n\t\u0022LastName\u0022: \u0022YES\u0022\n}"}
+{"Id":171,"Time":"2020-05-19T02:02:25.1323246+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":172,"Time":"2020-05-19T02:04:56.9028824+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}
+{"Id":173,"Time":"2020-05-19T02:05:05.6681788+02:00","Path":"/api/students/update","Method":"POST","QueryString":"","Body":"{\n\t\u0022IndexNumber\u0022: \u0022s5555\u0022,\n\t\u0022FirstName\u0022: \u0022UPDATED2\u0022,\n\t\u0022LastName\u0022: \u0022YES\u0022\n}"}
+{"Id":174,"Time":"2020-05-19T02:05:10.9202566+02:00","Path":"/api/students","Method":"GET","QueryString":"","Body":""}

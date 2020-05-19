@@ -9,10 +9,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using tuto3.DAL;
 using tuto3.DTOs.Requests;
+using tuto3.DTOs.Responses;
+using tuto3.Entities;
 using tuto3.Models;
 
 namespace tuto3.Controllers
@@ -25,11 +28,13 @@ namespace tuto3.Controllers
     {
         private readonly IDbService _dbService;
         private readonly IConfiguration _configuration;
+        private readonly StudentContext _studentContext;
 
-        public StudentsController(IDbService dbService, IConfiguration configuration)
+        public StudentsController(IDbService dbService, IConfiguration configuration, StudentContext studentContext)
         {
             _dbService = dbService;
             _configuration = configuration;
+            _studentContext = studentContext;
         }
 
         [HttpPost("upgrade-password/{indexNumber}")]
@@ -171,16 +176,29 @@ namespace tuto3.Controllers
         //[Authorize(AuthenticationSchemes = "AuthenticationOther")]
 
         //Can specify what claims should an authorized user have (here: what role)
-        [Authorize(Roles = "student")]
+        //[Authorize(Roles = "student")]
+        [AllowAnonymous]
         public IActionResult GetStudents()
         {
-            return Ok(_dbService.GetStudents());
+            var students = _studentContext.Student.
+                Include(s => s.IdEnrollmentNavigation).ThenInclude(s => s.IdStudyNavigation)
+                .Select(s => new GetStudentRes 
+                { 
+                    IndexNumber = s.IndexNumber,
+                    FirstName = s.FirstName,
+                    LastName = s.LastName,
+                    BirthDate = s.BirthDate.ToShortDateString(),
+                    Semester = s.IdEnrollmentNavigation.Semester,
+                    Studies = s.IdEnrollmentNavigation.IdStudyNavigation.Name
+                }).ToList();
+            //return Ok(_dbService.GetStudents());
+            return Ok(students);
         }
 
         [HttpGet("enrollment/{indexNumber}")]
         public IActionResult GetStudentEnrollment(string indexNumber)
         {
-            Enrollment enrollment = _dbService.GetEnrollment(indexNumber);
+            Models.Enrollment enrollment = _dbService.GetEnrollment(indexNumber);
             if (enrollment == null)
             {
                 return NotFound("Student not found");
@@ -191,7 +209,7 @@ namespace tuto3.Controllers
         [HttpGet("{indexNumber}")]
         public IActionResult GetStudent(string indexNumber)
         {
-            Student student = _dbService.GetStudent(indexNumber);
+            Models.Student student = _dbService.GetStudent(indexNumber);
             if (student == null)
             {
                 return NotFound("Student not found");
@@ -200,25 +218,80 @@ namespace tuto3.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateStudent(Student student)
+        [AllowAnonymous]
+        //public IActionResult CreateStudent(Models.Student student)
+         public IActionResult CreateStudent(AddStudentReq student)
         {
-            int inserted = _dbService.InsertStudent(student);
-            return Ok($"Inserted students: {inserted}");
+            //int inserted = _dbService.InsertStudent(student);
+            //return Ok($"Inserted students: {inserted}");
+            var studentEntity = new Entities.Student
+            {
+                IndexNumber = student.IndexNumber,
+                FirstName = student.FirstName,
+                LastName = student.LastName,
+                BirthDate = student.BirthDate,
+                IdEnrollment = student.IdEnrollment,
+                IdRole = 1,
+                Password = "pass",
+                Salt = "salt"
+            };
+            _studentContext.Add(studentEntity);
+            _studentContext.SaveChanges();
+            return Ok($"Inserted");
         }
 
         [HttpDelete("{indexNumber}")]
+        [AllowAnonymous]
         public IActionResult DeleteStudent(string indexNumber)
-        {
+        {   /*
             int deleted = _dbService.DeleteStudnet(indexNumber);
             if (deleted == 0)
             {
                 return NotFound("Student not found");
             }
             return Ok($"Students deleted: {deleted}");
+            */
+            var student = (new Entities.Student { IndexNumber = indexNumber });
+            _studentContext.Attach(student);
+            _studentContext.Remove(student);
+            _studentContext.SaveChanges();
+            return Ok($"Student deleted");
+        }
+
+        [HttpPost("update")]
+        [AllowAnonymous]
+        public IActionResult UpdateStudent(UpdateStudentReq req)
+        {
+            var studentEntity = new Entities.Student { IndexNumber = req.IndexNumber};
+            _studentContext.Attach(studentEntity);
+            if (req.FirstName != null)
+            {
+                studentEntity.FirstName = req.FirstName;
+                _studentContext.Entry(studentEntity).Property("FirstName").IsModified = true;
+
+            }
+            if (req.LastName != null)
+            {
+                studentEntity.LastName = req.LastName;
+                _studentContext.Entry(studentEntity).Property("LastName").IsModified = true;
+            }
+            if (req.BirthDate != null)
+            {
+                studentEntity.BirthDate = req.BirthDate;
+                _studentContext.Entry(studentEntity).Property("BirthDate").IsModified = true;
+            }
+            if (req.IdEnrollment != null)
+            {
+                studentEntity.IdEnrollment = Int32.Parse(req.IdEnrollment);
+                _studentContext.Entry(studentEntity).Property("IdEnrollment").IsModified = true;
+            }
+            
+            _studentContext.SaveChanges();
+            return Ok($"Updated");
         }
 
         [HttpPut]
-        public IActionResult PutStudent(Student student)
+        public IActionResult PutStudent(Models.Student student)
         {
             int put = _dbService.InsertOrUpdate(student);
             return Ok($"Inserted or updated students:  {put}");
