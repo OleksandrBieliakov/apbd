@@ -182,8 +182,8 @@ namespace tuto3.Controllers
         {
             var students = _studentContext.Student.
                 Include(s => s.IdEnrollmentNavigation).ThenInclude(s => s.IdStudyNavigation)
-                .Select(s => new GetStudentRes 
-                { 
+                .Select(s => new GetStudentRes
+                {
                     IndexNumber = s.IndexNumber,
                     FirstName = s.FirstName,
                     LastName = s.LastName,
@@ -220,7 +220,7 @@ namespace tuto3.Controllers
         [HttpPost]
         [AllowAnonymous]
         //public IActionResult CreateStudent(Models.Student student)
-         public IActionResult CreateStudent(AddStudentReq student)
+        public IActionResult CreateStudent(AddStudentReq student)
         {
             //int inserted = _dbService.InsertStudent(student);
             //return Ok($"Inserted students: {inserted}");
@@ -262,7 +262,7 @@ namespace tuto3.Controllers
         [AllowAnonymous]
         public IActionResult UpdateStudent(UpdateStudentReq req)
         {
-            var studentEntity = new Entities.Student { IndexNumber = req.IndexNumber};
+            var studentEntity = new Entities.Student { IndexNumber = req.IndexNumber };
             _studentContext.Attach(studentEntity);
             if (req.FirstName != null)
             {
@@ -285,7 +285,7 @@ namespace tuto3.Controllers
                 studentEntity.IdEnrollment = Int32.Parse(req.IdEnrollment);
                 _studentContext.Entry(studentEntity).Property("IdEnrollment").IsModified = true;
             }
-            
+
             _studentContext.SaveChanges();
             return Ok($"Updated");
         }
