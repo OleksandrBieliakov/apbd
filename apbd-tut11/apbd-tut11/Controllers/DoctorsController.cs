@@ -21,7 +21,6 @@ namespace apbd_tut11.Controllers
         {
             _dbService = dbService;
             _dbService.DbContext = context;
-
         }
             
         [HttpGet]

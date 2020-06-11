@@ -169,6 +169,11 @@ namespace apbd_tut11.Models
             prescriptions_medicamentsSeed.Add(new PrescriptionMedicament { IdPrescription = 3, IdMedicament = 3, Dose = 3, Details = "Det3" });
             modelBuilder.Entity<PrescriptionMedicament>().HasData(prescriptions_medicamentsSeed);
 
+            // In Package Manager Console: 
+            //      "Add-migration <Name of migration>
+            //      "script-migration" to get the SQL code which will be sent to the db
+            //      "update-database"
+
         }
 
     }
