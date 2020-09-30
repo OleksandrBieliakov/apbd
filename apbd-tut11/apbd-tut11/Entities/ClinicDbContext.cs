@@ -170,7 +170,7 @@ namespace apbd_tut11.Models
             modelBuilder.Entity<PrescriptionMedicament>().HasData(prescriptions_medicamentsSeed);
 
             // In Package Manager Console: 
-            //      "Add-migration <Name of migration>
+            //      "add-migration <Name of migration>
             //      "script-migration" to get the SQL code which will be sent to the db
             //      "update-database"
 
